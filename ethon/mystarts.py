@@ -2,8 +2,8 @@
 
 from telethon import events, Button
 
-async def start_srb(event, st):
-    await event.send_message(st, 
+async def start_srb(event, text):
+    await event.send_message(text, 
         reply_markup=[
                      [Button.url("🤖 Update Channel", url="t.me/vj_botz"),
                       Button.url("💢 Support Group", url="t.me/vj_bot_disscussion")],
