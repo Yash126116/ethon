@@ -6,7 +6,7 @@ from telethon import events, Button
 async def start_srb(event, st):
     await event.reply(st, 
                       buttons=[
-                              [Button.inline("🤖 Update Channel", url="t.me/vj_botz"),
+                              [Button.url("🤖 Update Channel", url="t.me/vj_botz"),
                                Button.url("💢 Support Group", url="t.me/vj_bot_disscussion")],
                               [Button.url("❣️ Developer", url="t.me/Kingvj01")]])
                               
