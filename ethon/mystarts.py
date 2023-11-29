@@ -1,22 +1,13 @@
 #ignore this file
 
 from telethon import events, Button
-from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 
 async def start_srb(event, st):
-    reply_markup = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("🤖 Update Channel", url="https://t.me/vj_botz"),
-                InlineKeyboardButton("💢 Support Group", url="https://t.me/vj_bot_disscussion")
-            ],
-            [
-                InlineKeyboardButton("❣️ Developer", url="https://t.me/Kingvj01")
-            ]
-        ]
-    )
-    
-    await event.send_message(st, reply_markup=reply_markup)
+    await event.send_message(st, 
+        reply_markup=[
+                     [Button.url("🤖 Update Channel", url="t.me/vj_botz"),
+                      Button.url("💢 Support Group", url="t.me/vj_bot_disscussion")],
+                     [Button.url("❣️ Developer", url="t.me/Kingvj01")]])
     
 async def vc_menu(event):
     await event.edit("**VIDEO CONVERTOR v1.4**", 
