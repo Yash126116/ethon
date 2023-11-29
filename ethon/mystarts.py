@@ -1,7 +1,7 @@
 #ignore this file
 
 from telethon import events, Button
-from pyrogram import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 
 async def start_srb(event, st):
     reply_markup = InlineKeyboardMarkup(
