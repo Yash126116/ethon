@@ -6,7 +6,7 @@ async def start_srb(event, st):
                       buttons=[
                               [Button.url("🤖 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/VJ_Botz"),
                                Button.url("🔍 sᴜᴘᴘᴏʀᴛ", url="https://t.me/vj_bot_disscussion")],
-                              [Button.url("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="t.me/KingVJO1")]
+                              [Button.url("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="t.me/KingVJ01")]
                               [Button.inline("🔺 sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ", data="set"),
                                Button.inline("🔻 ʀᴇᴍᴏᴠᴇ ᴛʜᴜᴍʙɴᴀɪʟ", data="rem")]
                               [Button.url("💝 sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ", url="https://youtube.com/@Tech_VJ")]]) 
