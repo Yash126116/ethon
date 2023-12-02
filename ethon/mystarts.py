@@ -1,13 +1,15 @@
-#ignore this file
-
 from telethon import events, Button
 
-async def start_srb(event, text):
-    await event.send_message(text, 
-        reply_markup=[
-                     [Button.url("🤖 Update Channel", url="t.me/vj_botz"),
-                      Button.url("💢 Support Group", url="t.me/vj_bot_disscussion")],
-                     [Button.url("❣️ Developer", url="t.me/Kingvj01")]])
+
+async def start_srb(event, st):
+    await event.reply(st, 
+                      buttons=[
+                              [Button.url("🤖 ᴜᴘᴅᴀᴛᴇ", url="https://t.me/VJ_Botz"),
+                               Button.url("🔍 sᴜᴘᴘᴏʀᴛ", url="https://t.me/vj_bot_disscussion")],
+                              [Button.url("❣️ ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="t.me/KingVJO1")]
+                              [Button.inline("🔺 sᴇᴛ ᴛʜᴜᴍʙɴᴀɪʟ", data="set"),
+                               Button.inline("🔻 ʀᴇᴍᴏᴠᴇ ᴛʜᴜᴍʙɴᴀɪʟ", data="rem")]
+                              [Button.url("💝 sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ", url="https://youtube.com/@Tech_VJ")]]) 
     
 async def vc_menu(event):
     await event.edit("**VIDEO CONVERTOR v1.4**", 
