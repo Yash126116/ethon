@@ -112,7 +112,6 @@ async def fast_download(filename, file, bot, event, time, msg):
 """
 ---------------------------------------------------------------------------------
 """
-ft = "𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐅𝐢𝐫𝐬𝐭 𝐉𝐨𝐢𝐧 𝐁𝐞𝐥𝐨𝐰 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐓𝐡𝐞𝐧 𝐀𝐟𝐭𝐞𝐫 𝐔𝐬𝐞 𝐌𝐞."
 
 #Forcesub
 async def force_sub(client, channel, id, ft):
@@ -125,7 +124,7 @@ async def force_sub(client, channel, id, ft):
         else:
             s, r = False, None
     except UserNotParticipantError:
-        s, r = True, ft
+        s, r = True, "𝐓𝐨 𝐔𝐬𝐞 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐅𝐢𝐫𝐬𝐭 𝐉𝐨𝐢𝐧 𝐁𝐞𝐥𝐨𝐰 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐓𝐡𝐞𝐧 𝐀𝐟𝐭𝐞𝐫 𝐔𝐬𝐞 𝐌𝐞."
     except Exception:
         s, r = True, "**ERROR: Add in ForceSub channel, or check your channel id.**"
     return s, r
