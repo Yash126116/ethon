@@ -379,7 +379,7 @@ async def download_file(
     progress_callback: callable = None,
 ) -> BinaryIO:
     dc_id, location = utils.get_input_location(location)
-    size = location.size
+    size = 0
     # We lock the transfers because telegram has connection count limits
     downloader = ParallelTransferrer(client, dc_id)
     downloaded = downloader.download(location, size)
